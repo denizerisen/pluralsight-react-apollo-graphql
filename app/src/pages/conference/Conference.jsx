@@ -10,17 +10,11 @@ export function Conference() {
   return (
     <>
       <Switch>
-        <Route path={`${path}/sessions/new`}>	
-          <AddSession />	
-        </Route>
         <Route path={`${path}/sessions`}>
           <Sessions />
         </Route>
         <Route path={`${path}/speakers`}>
           <Speakers />
-        </Route>
-        <Route path={`${path}/speaker/:speaker_id`}>
-          <Speaker />
         </Route>
         <Route path={`${path}`}>
           <section className="banner">
